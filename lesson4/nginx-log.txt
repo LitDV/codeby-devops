@@ -1,0 +1,42 @@
+Script started on 2024-03-07 15:53:24+03:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="206" LINES="57"]
+[?2004h]0;dev@dev01: ~dev@dev01:~$ exitsudo systemctl status my_nginxenable[C[C[C[C[C[C[C[C[C[2Pdaemon-reload
+[?2004l[sudo] пароль для dev: 
+[?2004h]0;dev@dev01: ~dev@dev01:~$ sudo systemctl daemon-reload[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ksudo systemctl status my_nginxenable[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;dev@dev01: ~dev@dev01:~$ sudo systemctl enable my_nginx[2Pdaemon-reload[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ksudo systemctl status my_nginx
+[?2004l[?1h=○ my_nginx.service - homework with new service[m
+     Loaded: loaded (/lib/systemd/system/my_nginx.service; enabled; vendor preset: enabled)[m
+     Active: inactive (dead) since Thu 2024-03-07 15:52:21 MSK; 1min 33s ago[m
+       Docs: man:nginx(8)[m
+   Main PID: 67412 (code=exited, status=0/SUCCESS)[m
+        CPU: 61ms[m
+[m
+мар 07 15:49:10 dev01 systemd[1]: Starting homework with new service...[m
+мар 07 15:49:10 dev01 systemd[1]: Started homework with new service.[m
+мар 07 15:52:21 dev01 systemd[1]: Stopping homework with new service...[m
+мар 07 15:52:21 dev01 systemd[1]: my_nginx.service: Deactivated successfully.[m
+мар 07 15:52:21 dev01 systemd[1]: Stopped homework with new service.[m
+[K[?1l>[?2004h]0;dev@dev01: ~dev@dev01:~$ sudo systemctl status my_nginxenable[C[C[C[C[C[C[C[C[C[C[1P my_nginx[1P my_nginx[1P my_nginx[1P my_nginx[1P my_nginx[1P my_nginxs my_nginxt my_nginxa my_nginxr my_nginxt my_nginx
+[?2004l[?2004h]0;dev@dev01: ~dev@dev01:~$ sudo systemctl start my_nginx[1@tus[C[C[C[C[C[C[C[C[C
+[?2004l[?1h=[0;1;32m●[0m my_nginx.service - homework with new service[m
+     Loaded: loaded (/lib/systemd/system/my_nginx.service; enabled; vendor preset: enabled)[m
+     Active: [0;1;32mactive (running)[0m since Thu 2024-03-07 15:54:10 MSK; 3s ago[m
+       Docs: man:nginx(8)[m
+    Process: 69474 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+    Process: 69475 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+   Main PID: 69476 (nginx)[m
+      Tasks: 5 (limit: 9431)[m
+     Memory: 4.8M[m
+        CPU: 42ms[m
+     CGroup: /system.slice/my_nginx.service[m
+             ├─69476 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[m
+             ├─69477 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─69478 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─69479 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             └─69480 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+[m
+мар 07 15:54:10 dev01 systemd[1]: Starting homework with new service...[m
+мар 07 15:54:10 dev01 systemd[1]: Started homework with new service.[m
+[K[?1l>[?2004h]0;dev@dev01: ~dev@dev01:~$ exit
+[?2004lexit
+
+Script done on 2024-03-07 15:54:25+03:00 [COMMAND_EXIT_CODE="0"]

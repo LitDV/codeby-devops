@@ -1,0 +1,25 @@
+Script started on 2024-03-07 15:06:25+03:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="206" LINES="57"]
+[?2004h]0;dev@dev01: ~dev@dev01:~$ exitps -ukill -9 30661[8Pps -u[1Pexit[Kjava - [Kversion
+[?2004lopenjdk version "1.8.0_392"
+OpenJDK Runtime Environment (build 1.8.0_392-8u392-ga-1~22.04-b08)
+OpenJDK 64-Bit Server VM (build 25.392-b08, mixed mode)
+[?2004h]0;dev@dev01: ~dev@dev01:~$ sudo update-alternatives --config java
+[?2004l[sudo] пароль для dev: 
+Есть 2 варианта для альтернативы java (предоставляет /usr/bin/java).
+
+  Выбор   Путь                                        Приор Состояние
+------------------------------------------------------------
+  0            /usr/lib/jvm/java-11-openjdk-amd64/bin/java      1111      автоматический режим
+  1            /usr/lib/jvm/java-11-openjdk-amd64/bin/java      1111      ручной режим
+* 2            /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java   1081      ручной режим
+
+Нажмите «enter», чтобы не менять текущий выбор[*], или введите нужное число: 0
+update-alternatives: используется /usr/lib/jvm/java-11-openjdk-amd64/bin/java для предоставления /usr/bin/java (java) в автоматическом режиме
+[?2004h]0;dev@dev01: ~dev@dev01:~$ sudo update-alternatives --config java[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pjava -version
+[?2004lopenjdk version "11.0.22" 2024-01-16
+OpenJDK Runtime Environment (build 11.0.22+7-post-Ubuntu-0ubuntu222.04.1)
+OpenJDK 64-Bit Server VM (build 11.0.22+7-post-Ubuntu-0ubuntu222.04.1, mixed mode, sharing)
+[?2004h]0;dev@dev01: ~dev@dev01:~$ exit
+[?2004lexit
+
+Script done on 2024-03-07 15:08:14+03:00 [COMMAND_EXIT_CODE="0"]
