@@ -1,0 +1,13 @@
+- hosts: vagrandvm
+  tasks: 
+  - name: install wget
+    apt: name=wget state=present update_cache=true
+  - name: install htop
+    apt: name=htop state=present update_cache=true
+  - name: Install nginx
+    apt: name=nginx state=latest update_cache=true
+  - name: Печать имени хоста
+    ansible.builtin.debug:
+     msg: This host is in {{ inventory_hostname }} environment
+
+
