@@ -1,0 +1,7 @@
+[vagrandvm]
+prod ansible_host=192.168.33.20	ansible_user=root
+dev ansible_host=192.168.33.30 ansible_user=root
+[testzone]
+192.168.23.96 ansible_user=root
+[defaults]
+inventory = ./env/dev/inv
